@@ -42,7 +42,7 @@ class Server {
                  while (true) {
                      try {
                          String msg = br.readLine();
-                         if (msg.equals("exit")) {
+                         if(msg.equals("exit")) {
                              System.out.println("Client terminated the chat");
                              break;
                          }
@@ -56,7 +56,7 @@ class Server {
          }
 
          public void startWriting() {
-//thread-data user lega and then send krke client tak
+//thread-data user se lega and then send krke client tak
 
              Runnable r2 = () -> {
                  System.out.println("writer started...");
@@ -80,4 +80,4 @@ class Server {
 
      }
      }
- 
+
