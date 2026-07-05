@@ -114,7 +114,7 @@ public class client  extends JFrame {
          while(true){
                  String msg=br.readLine();
                  if(msg.equals("exit")){
-                     System.out.println("Client terminated the chat");
+                     System.out.println("Server terminated the chat");
                      JOptionPane.showMessageDialog(this,"server terminated the chat");
                      messageInput.setEnabled(false);
                      socket.close();
